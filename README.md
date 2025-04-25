@@ -65,16 +65,15 @@ OPENAI_API_KEY=your_api_key
 
 ## Examples
 
-### Line-by-line Processing
-
+### Full Text Processing (Default Mode)
 ```bash
-echo -e "First line\nSecond line" | aipipe --prompt "Translate the following text to English"
+echo -e "First line\nSecond line" | aipipe "Translate the following text to English"
 ```
 
 ### Batch Processing
 
 ```bash
-echo -e "First line\nSecond line\nThird line" | aipipe --prompt "Summarize the following text" --batch
+echo -e "First line\nSecond line\nThird line" | aipipe "Summarize the following text" --batch
 ```
 
 ## License
